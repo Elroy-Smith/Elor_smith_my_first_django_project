@@ -130,4 +130,4 @@ dmypy.json
 
 # Database configuration
 configuration.py
-
+config.py
