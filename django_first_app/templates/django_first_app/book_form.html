@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        <input name="title" placeholder="title">
+        <input name="author" placeholder="author">
+        <input name="description" placeholder="description">
+        <input name="page_count" placeholder="page count">
+        <input name="rating" placeholder="rating">
+        <input name="price" placeholder="price">
+        <input type="submit" value="Dodaj książkę">
+        {%  csrf_token %}
+    </form>
+</body>
+</html>

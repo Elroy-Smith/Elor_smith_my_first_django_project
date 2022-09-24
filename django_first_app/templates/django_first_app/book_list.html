@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Tytuł</th>
+            <th>Autor</th>
+            <th>Opis</th>
+            <th>Ilość stron</th>
+            <th>Ocena</th>
+            <th>Cena</th>
+        </tr>
+        {% for book in books %}
+            <tr>
+                <td>{{  book.title }}</td>
+                <td>{{  book.author }}</td>
+                <td>{{  book.description }}</td>
+                <td>{{  book.page_count }}</td>
+                <td>{{  book.rating }}</td>
+                <td>{{  book.price }}</td>
+            </tr>
+        {%  endfor %}
+    </table>
+</body>
+</html>

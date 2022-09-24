@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <h1>Witaj Django</h1>
+    Pierwszy template
+    {{ names }}
+    <form method="post">
+        <input name="login" placeholder="login">
+        <input name="password" type="password" placeholder="hasło">
+        <input type="submit" value="Zaloguj">
+        {% csrf_token %}
+    </form>
+    {{login}}
+    {{password}}
+    {% for name in names %}
+    <p>{{name}}</p>
+    {% endfor %}
+
+    {% for i in range.len.names %}
+    <p>{{i}}</p>
+    {% endfor %}
+</body>
+</html>

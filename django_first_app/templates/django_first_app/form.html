@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj produkt</title>
+</head>
+<body>
+  <form method="post">
+      <label> nazwa produktu
+          <input name="product" placeholder="nazwa produktu">
+      </label>
+      <input type="submit" value="dodaj produkt">
+    {% csrf_token %}
+  </form>
+
+{{ request.GET.message }}
+</body>
+</html>
