@@ -99,3 +99,6 @@ def fizz_buzz(request):
         else:
             data.append(element)
     return render(request, "django_first_app/fizzbuzz.html", {"data": data})
+
+def new_function(request):
+    pass
